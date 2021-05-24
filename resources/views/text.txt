@@ -1,0 +1,9 @@
+
+<?php $total=0; ?>
+                                                            @foreach ($projects as $project)
+                                                            @if ($menu->id == $project->stage_id)
+                                                                    <?php $total +=1; ?>
+
+                                                            @endif
+                                                            @endforeach
+                                                            <?php echo $total; ?>
